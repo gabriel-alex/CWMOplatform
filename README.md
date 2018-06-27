@@ -3,6 +3,8 @@
 This platform is an experimental web application based on java.
 The objective of this application is to develop functionalities based on [CWMO ontology](https://github.com/gabriel-alex/cwmo) in order to improve the management of creative workshop. The ambition of this platform is to provide the material to evaluate the usage of technology and notably AI-based technology in the management of the creative workshop. The work is based on the research done in the [Alex Gabriel's PhD thesis](https://www.researchgate.net/publication/313037722_Gestion_des_connaissances_lors_d%27un_processus_collaboratif_de_creativite).
 
+The platform can be tested [here](https://cwmo-platform.herokuapp.com). Actually it is only a work in progress. It is uploaded to share the progress but design and functionalities could be broken. 
+
 ## Technical aspect
 This application use the OWLAPI 5 and the HermiT inference engine.
 Further documentation about OWLAPI can be found here:
