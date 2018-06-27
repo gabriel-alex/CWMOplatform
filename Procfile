@@ -1,1 +1,1 @@
-web: java -jar target/CWMOplatform-1.0.jar
+web: java -jar target/CWMOplatform-0.0.1-SNAPSHOT.jar
