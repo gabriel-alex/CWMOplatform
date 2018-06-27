@@ -1,0 +1,5 @@
+{
+  "name": "CWMO Platform: Make the creative workshop creative again",
+  "description": "A platform based on cognitive technologies in order to make you and yours collegues focus on solving creatively problem and not how managing it.",
+  "addons": [ "heroku-postgresql" ]
+}
