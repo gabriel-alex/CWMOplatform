@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'techniques')}">
 <body>
 <div class="jumbotron text-center">
   <div class="container">
-  <h1>HelloWorld</h1>
-  <p></p>
+  <h1>Instances from ontology</h1>
   <a href="https://desolate-caverns-93471.herokuapp.com/">Home</a>
   </div>
-  <div class="container">
-  <h1>Instances from ontology</h1>
+  
+</div>
+<div class="container">
+  
   <ul th:each="instance : ${instances}">
     <li th:text="${instance}"/>
   </ul>
-</div>
 </div>
 </body>
 </html>

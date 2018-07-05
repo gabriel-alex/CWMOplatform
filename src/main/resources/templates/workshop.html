@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{fragments/layout :: layout (~{::body},'tool')}">
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'menu')}"></div>
+			<main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
+			<h3 th:text="${workshop.title}"></h3>
+			<p th:text="${workshop.description}"></p>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

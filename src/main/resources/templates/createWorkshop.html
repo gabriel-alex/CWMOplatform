@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{fragments/layout :: layout (~{::body},'tool')}">
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'none')}"></div>
+			<main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
+			<h3>Create a new workshop</h3>
+			<form th:action="@{/workshop/create/}" th:object="${workshop}" method="post" >
+			<div class="form-row">
+			<label for="title">Title of the workshop</label>
+			<input id="title" class="form-control" type="text" th:field="*{title}">
+			</div>
+			<div class="form-row">
+			<label for="description">Description of the workshop</label>
+			<input id="description" class="form-control" type="text" th:field="*{description}">
+			</div>
+			<div class="form-row">
+			<div class="col">
+			<label for="startDate">Starting date</label>
+			<input id="startDate" class="form-control" type="date">
+			</div>
+			<div class="col">
+			<label for="startTime">Starting time</label>
+			<input id="startTime" class="form-control" type="time">
+			</div>
+			</div>
+			<div class="form-row">
+			<div class="col">
+			<label for="endDate">Ending date</label>
+			<input id="endDate" class="form-control" type="date">
+			</div>
+			<div class="col">
+			<label for="endingTime">Ending time</label>
+			<input id="endingTime" class="form-control" type="time">
+			</div>
+			</div>
+			<button class="btn btn-primary btn-lg btn-block" type="submit">Create a workshop</button>
+			</form>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
