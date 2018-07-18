@@ -4,18 +4,18 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'menu')}"></div>
+			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'creativeStrategy.shortURI')}"></div> //add the workshop URI to highlight it 
 			<main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
-			
+			<h2 th:text="#{creativeStrategy.pageTitle}"></h2>
 			<div class="row">
 				<div class="col">
-					<h3 th:text="${workshop.title}"></h3>
+					<h3 th:text="${creativeStrategy.title}"></h3>
 				</div>
 				<div class="col">
 					<!--  progress -->
 				</div>
 			</div>
-			<p th:text="${workshop.description}"></p>
+			<p th:text="${creativeStrategy.description}"></p>
 			<hr/>
 			<h3>Strategy</h3>
 			</main>

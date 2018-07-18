@@ -1,5 +1,8 @@
-package io.github.gabriel.alex;
+package io.github.gabriel.alex.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CreativeTechnique {
 	/**
 	 * Name of the creative technique
@@ -69,13 +72,17 @@ public class CreativeTechnique {
 	 * Array of the creative technique related to the instance
 	 */
 	private String[] relatedTo;
+	
+	
+	
+	
 
 	/**
 	 * Constructor CreativeTechnique - create an instance with a short URI
 	 * 
 	 * @param URI
 	 */
-	CreativeTechnique(String URI) {
+	public CreativeTechnique(String URI) {
 		setShortURI(URI);
 	}
 
@@ -83,7 +90,7 @@ public class CreativeTechnique {
 	 * Constructor CreativeTechnique - Create an empty instance of the creative
 	 * technique object
 	 */
-	CreativeTechnique() {
+	public CreativeTechnique() {
 	}
 
 	public String getShortURI() {

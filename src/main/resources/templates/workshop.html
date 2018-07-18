@@ -4,10 +4,29 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'menu')}"></div>
+			<div th:replace="~{fragments/toolsidebar :: toolsidebar (~{::body}, 'workshop.shortURI')}"></div>
 			<main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
-			<h3 th:text="${workshop.title}"></h3>
-			<p th:text="${workshop.description}"></p>
+			<div class="row">
+				<div class="col-md-4"><h3 th:text="#{wrkshpDetail.wkshpTitle}"></h3>Title</div>
+				<div class="col-md-8" ><h3 th:text="${workshop.title}" >Title</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><h3 th:text="#{wrkshpDetail.description}"></h3>Description</div>
+				<div class="col-md-8"><h3 th:text="${workshop.description}">Description</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><h3 th:text="#{wrkshpDetail.shrtURI}"></h3>Short URI</div>
+				<div class="col-md-8"><h3 th:text="${workshop.shortURI}">Short URI</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><h3 th:text="#{wrkshpDetail.organizer}"></h3>Organizer</div>
+				<div class="col-md-8"><h3 th:text="${workshop.organizer}">Organizer</h3></div>
+			</div>
+			<h2 th:text="#{wrkshpDetail.strategiesTitle}">Strategie(s)</h2>
+			<div class="table-responsive">
+				<table class="table table-striped table-sm">
+				</table>
+			</div>
 			</main>
 		</div>
 	</div>

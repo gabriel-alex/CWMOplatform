@@ -5,12 +5,12 @@
 	<nav class="col-md-2 d-none d-md-block bg-light sidebar">
 		<div class="side-sticky">
 			<ul class="nav flex-column">
-				<li class="nav-item"><a href="/techniques" class="nav-link"><span
-						class="glyphicon glyphicon-wrench"></span> Techniques</a></li>
+				<li class="nav-item" th:class="${menu == 'technique'}? 'active'"><a href="/techniques" class="nav-link">
+				<span class="glyphicon glyphicon-wrench"></span> <span th:text="#{toolSideMenu.techniques}">Techniques</span></a></li>
 			</ul>
 			<h6
 				class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-				<span>Workshops</span> <a
+				<span th:text="#{toolSideMenu.workshops}" >Workshops</span> <a
 					class="d-flex align-items-center text-muted"
 					href="/workshop/create/"> <span
 					class="glyphicon glyphicon-plus-sign"></span>
@@ -18,12 +18,12 @@
 			</h6>
 
 			<ul class="nav flex-column mb-2" th:each="workshop:${workshops}">
-				<li class="nav-item"><a class="nav-link"
-					th:class="${menu == workshop.shortURI}? 'active'"
+				<li class="nav-item" th:class="${menu == workshop.shortURI}? 'active'"><a class="nav-link"
 					th:href="@{/workshop(uri=${workshop.shortURI})}"
-					th:text="${workshop.shortURI}"> Workshop </a></li>
+					th:text="${workshop.shortURI}"> Workshop Item </a>
+					<!--  Submenu for listing the creative strategy associated to the workshop and master each one -->
+					</li>
 			</ul>
-
 		</div>
 	</nav>
 </body>

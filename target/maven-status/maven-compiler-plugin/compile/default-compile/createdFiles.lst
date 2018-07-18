@@ -1,5 +1,7 @@
-io\github\gabriel\alex\OntologyManager.class
-io\github\gabriel\alex\CreativeTechnique.class
+io\github\gabriel\alex\beans\CreativeStrategy.class
+io\github\gabriel\alex\beans\Workshop.class
+io\github\gabriel\alex\beans\CreativeTechnique.class
 io\github\gabriel\alex\AppConfig.class
 io\github\gabriel\alex\Main.class
-io\github\gabriel\alex\Workshop.class
+io\github\gabriel\alex\OntologyManager.class
+io\github\gabriel\alex\controller\PlatformController.class
